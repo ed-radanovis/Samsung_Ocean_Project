@@ -1,7 +1,9 @@
 const express = require("express");
 const { MongoClient, ObjectId } = require("mongodb");
 
-const url = "mongodb://localhost:27017";
+// const url = "mongodb://localhost:27017";
+// New conection with MongoDB Atlas
+const url = "mongodb+srv://edradanovis:ePFjbiJcCOZ91crb@cluster0.rgy2fps.mongodb.net";
 
 const dbName = "SamsungOceanProject_JornadaBackEnd";
 const client = new MongoClient(url);
