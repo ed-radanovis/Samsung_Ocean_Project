@@ -92,7 +92,10 @@ async function main() {
     res.status(204).send();
   });
 
-  app.listen(2000, () =>
+//   app.listen(2000, () =>
+//     console.log("💀 Server is up and running on 💻 http://localhost:2000 💀")
+//   );
+app.listen(process.env.PORT || 2000, () =>
     console.log("💀 Server is up and running on 💻 http://localhost:2000 💀")
   );
 }
